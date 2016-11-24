@@ -1,5 +1,5 @@
 body {
-  background-color: #03A9F4;
+  background-color: #004f59;
   font-family: 'Roboto', sans-serif;
   position: relative;
 }
@@ -8,8 +8,11 @@ body {
   position: absolute;
   top: 50% !important;
   left: 50% !important;
-  transform: translate(-50%, 125%);
+  transform: translate(-50%, 70%);
   background: white;
-  padding: 25px;
-  box-shadow: 0px 1px 6px #002941;
+  box-shadow: 3px 3px 6px #002941;
+}
+
+input {
+  cursor: pointer !important;
 }

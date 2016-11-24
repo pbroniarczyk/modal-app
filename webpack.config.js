@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   context: __dirname,
   entry: './js/index.js',
@@ -13,8 +15,18 @@ module.exports = {
       }
     ]
   },
+
   output: {
     path: __dirname + '/js/',
     filename: 'index.min.js',
   },
+
+  /*plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
+  ],*/
 };

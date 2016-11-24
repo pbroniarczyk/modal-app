@@ -9,14 +9,19 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import Date from './components/Date-Picker';
 import ButtonRaised from './components/Button';
 
+// Custom components
+import Desc from './components/Desc';
+import Header from './components/Header';
+
 // onTouchTap fix
 injectTapEventPlugin();
 
 const App = () => (
   <MuiThemeProvider>
     <div>
+      <Header/>
       <Date/>
-      <ButtonRaised/>
+      <Desc/>
     </div>
   </MuiThemeProvider>
 );
